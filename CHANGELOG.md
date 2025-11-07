@@ -14,16 +14,22 @@ the following form: YYYY.0M.0D.
 - Designed a DataStream component
 - Designed a DataTable component
 
-## 2025.10.16
+## [2025.10.16]
 
 ### Added
 
 - Designed a proof of concept for ColorPalette component
 - Added kernel methods: size, isEmpty, addColor, removeColor
-- Added secondary methods: averageColor, mosFrequent
-- Added ColorToString to display RBG values
-- Added display to show current colors in palette
+- Added secondary methods: average Color, mostFrequent
+- Added ColorToString to display RBG Values
+- Added 'display' to show current colors in palette
+
+## [2025.10.25]
+
+### Added
+
+- Designed `ColorPaletteKernel` and `ColorPaletteEnhanced` interfaces for the ColorPalette component
 
 ### Updated
 
-- Changed design to include size() in kernel
+- Updated project structure to include `ColorPaletteKernel.java` and `ColorPalette.java` interface files in src folder
