@@ -1,3 +1,5 @@
+package components.colorpalette;
+
 import java.awt.Color;
 
 import components.standard.Standard;
@@ -5,34 +7,30 @@ import components.standard.Standard;
 /**
  * Kernel interface for {@code ColorPalette}.
  *
- * @author Amanda Lan
+ * @author Amanda
  */
-public interface ColorPaletteKernel extends Standard {
-
-    /*
-     * Kernel Methods ----------------------------------------------------------
-     */
+public interface ColorPaletteKernel extends Standard<ColorPalette> {
 
     /**
      * Adds the given color to this palette.
      *
      * @param c
      *            the Color to add
-     * @requires this.size() < MAX_SIZE and c is not null
-     * @ensures this = #this * <c>
+     * @updates this
+     * @requires c is not null
+     * @ensures this = #this union {c}
      */
     void addColor(Color c);
 
     /**
-     * Removes and returns the most recently added color.
+     * Removes and returns one color from this palette.
      *
      * @return the color that was removed
      * @updates this
-     * @requires this.count > 0
-     * @ensures removeColor = [last color added] and this.count = #this.count -
-     *          1
+     * @requires this is not empty
+     * @ensures removeColor is in #this and this = #this \ {removeColor}
      */
-    void removeColor(Color c);
+    Color removeColor();
 
     /**
      * Checks whether this palette contains the given color.
@@ -57,7 +55,7 @@ public interface ColorPaletteKernel extends Standard {
      * Returns the number of colors currently in this palette.
      *
      * @return the number of colors
-     * @ensures size = this.count
+     * @ensures size = [number of colors]
      */
     int size();
 }

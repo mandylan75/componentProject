@@ -33,3 +33,20 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Updated project structure to include `ColorPaletteKernel.java` and `ColorPalette.java` interface files in src folder
+
+## [2025.11.07]
+
+### Added
+
+- Created ColorPaletteSecondary.java abstract class to implement secondary methods (averageColor, mostFrequent)
+- Created ColorPalette1.java concrete class for kernel method implementation
+- Added equals(), toString(), and hashCode() methods in ColorPaletteSecondary
+
+### Updated
+
+- Converted ColorPalette.java to an interface containing both kernel and secondary methods
+- Reorganized files into components/colorpalette package
+
+### Removed
+
+- Removed ColorPaletteEnhanced.java file

@@ -1,13 +1,24 @@
+package components.colorpalette;
+
 import java.awt.Color;
 
 /**
  * Enhanced interface for {@code ColorPalette}.
  *
- * Extends the basic kernel with additional operations for color analysis.
+ * Extends the kernel interface with additional color analysis methods.
  *
- * @author Amanda Lan
+ * <p>
+ * Kernel methods (from {@code ColorPaletteKernel}): addColor, removeColor,
+ * contains, isEmpty, size
+ * </p>
+ *
+ * <p>
+ * Secondary methods (added here): averageColor, mostFrequent
+ * </p>
+ *
+ * @author Amanda
  */
-public interface ColorPaletteEnhanced extends ColorPaletteKernel {
+public interface ColorPalette extends ColorPaletteKernel {
 
     /**
      * Computes the average (blended) color of all colors in this palette.
@@ -21,10 +32,10 @@ public interface ColorPaletteEnhanced extends ColorPaletteKernel {
 
     /**
      * Returns the most frequent color in this palette. If not empty, return the
-     * first color. If empty, return black.
+     * most common color. If empty, return black.
      *
      * @return the most frequent color or black if empty
-     * @ensures mostFrequent = [first color in palette if not empty, else (0, 0,
+     * @ensures mostFrequent = [most frequent color if not empty, else (0, 0,
      *          0)]
      */
     Color mostFrequent();
