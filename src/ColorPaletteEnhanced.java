@@ -7,7 +7,7 @@ import java.awt.Color;
  *
  * @author Amanda Lan
  */
-public interface ColorPalette extends ColorPaletteKernel {
+public interface ColorPaletteEnhanced extends ColorPaletteKernel {
 
     /**
      * Computes the average (blended) color of all colors in this palette.
