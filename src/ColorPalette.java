@@ -13,7 +13,7 @@ import components.simplewriter.SimpleWriter1L;
  * Kernel methods: addColor, removeColor, contains, isEmpty, size Secondary
  * methods: averageColor, mostFrequent
  *
- * @author Amanda
+ * @author Amanda Lan
  */
 public final class ColorPalette {
 
