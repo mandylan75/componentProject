@@ -33,7 +33,7 @@ src
 └───components
     └───ColorPalette
             ColorPalette.java
-            ColorPalette1L.java
+            ColorPalette1.java
             ColorPaletteKernel.java
             ColorPaletteSecondary.java
 
