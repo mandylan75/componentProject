@@ -7,7 +7,7 @@ import components.standard.Standard;
 /**
  * Kernel interface for {@code ColorPalette}.
  *
- * @author Amanda
+ * @author Amanda Lan
  */
 public interface ColorPaletteKernel extends Standard<ColorPalette> {
 

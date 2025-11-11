@@ -16,7 +16,7 @@ import java.awt.Color;
  * Secondary methods (added here): averageColor, mostFrequent
  * </p>
  *
- * @author Amanda
+ * @author Amanda Lan
  */
 public interface ColorPalette extends ColorPaletteKernel {
 
