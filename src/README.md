@@ -36,10 +36,13 @@ If done correctly, your portfolio can be bundled as its own `.jar`.
 
 This diagram shows how the `ColorPalette` component fits within the OSU CSE component discipline hierarchy.
 
-Standard
-↑
-ColorPaletteKernel
-↑
-ColorPaletteSecondary
-↑
-ColorPalette
+```
+src
+└───components
+    └───ColorPalette
+            ColorPalette.java
+            ColorPalette1.java
+            ColorPaletteKernel.java
+            ColorPaletteSecondary.java
+
+```
