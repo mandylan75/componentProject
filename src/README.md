@@ -20,26 +20,23 @@ In other words, you would need to nest a `components` folder in the `src`
 folder. Then, nest the `naturalnumber` folder in the `components` folder.
 The result would be the following directory structure:
 
-```
-src
-└───components
-    └───naturalnumber
-            NaturalNumber.java
-            NaturalNumber1L.java
-            NaturalNumberKernel.java
-            NaturalNumberSecondary.java
-```
-
 If done correctly, your portfolio can be bundled as its own `.jar`.
+<<<<<<< Updated upstream
+=======
 
 ## ColorPalette Component Hierarchy
 
 This diagram shows how the `ColorPalette` component fits within the OSU CSE component discipline hierarchy.
 
-Standard
-↑
-ColorPaletteKernel
-↑
-ColorPaletteSecondary
-↑
-ColorPalette
+```
+src
+└───components
+    └───ColorPalette
+            ColorPalette.java
+            ColorPalette1.java
+            ColorPaletteKernel.java
+            ColorPaletteSecondary.java
+
+```
+
+> > > > > > > Stashed changes
