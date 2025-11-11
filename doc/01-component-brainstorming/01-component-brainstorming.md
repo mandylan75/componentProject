@@ -64,7 +64,7 @@ project. Specifically, students should be able to:
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
 are meant to provide ongoing feedback in the learning process. Therefore,
-the rubric is designed to assess the learning objectives *directly* in a way
+the rubric is designed to assess the learning objectives _directly_ in a way
 that is low stakes—meaning you shouldn't have to worry about the grade. Just
 do good work.
 
@@ -119,8 +119,6 @@ you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
 
-<!-- TODO: review this example component then delete this comment -->
-
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
 mirror the formatting as close as possible in your designs. By following this
@@ -144,7 +142,7 @@ format, we can be more confident that your designs will be possible.
     - `NaturalNumber divide(NaturalNumber n)`: divides `this` by `n`, returning
       the remainder
     - ...
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
       - Yes, basically all OSU components have to be mutable as long as they
@@ -156,7 +154,7 @@ format, we can be more confident that your designs will be possible.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
       - Yes. NaturalNumber is base 10, and we track that in a constant called
-          `RADIX`.
+        `RADIX`.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
       - Yes. The kernel methods `multiplyBy10` and `divideBy10` can be used to
@@ -187,22 +185,23 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-NOTE: I'm not sure if I'll be using *all* the methods provided below per component, those are just ideas so far.
+NOTE: I'm not sure if I'll be using _all_ the methods provided below per component, those are just ideas so far.
 
 - Component Design #1: ColorPalette
+
   - **Description**:
     - A component that models an ordered collection of colors in a digital palette; The kernel manages adding and removing colors, while secondary methods provides color analysis and transformations.
   - **Kernel Methods**:
-     - void addColor(Color c): adds a color to the palette
-     - Color removeColor(): removes and returns a color
-     - boolean contains(Color c): checks if the palette includes a color
-     - boolean isEmpty() reports if the palette has no colors
+    - void addColor(Color c): adds a color to the palette
+    - Color removeColor(): removes and returns a color
+    - boolean contains(Color c): checks if the palette includes a color
+    - boolean isEmpty() reports if the palette has no colors
   - **Secondary Methods**:
     - Color averageColor(): : blends all colors to find the average
     - ImagePalette complement(): creates a new palette of complementary colors
     - Color mostFrequent(): returns the most common color
     - int size(): reports how many colors are in the palette
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
       - yes, you can add and remove colors.
@@ -217,8 +216,9 @@ NOTE: I'm not sure if I'll be using *all* the methods provided below per compone
       -Yes, because averageColor() and complement() both rely on iterating through kernel methods (addColor and removeColor). An example is averageColor() can copy the palette, remove colors one by one to read values, then re-add them back.
 
 - Component Design #2: DataStream
+
   - **Description**:
-    - Models a sequence of numeric values that arrive in order (like      sensor readings or log data). Kernel manages adding/removing entries, while secondary methods provide analysis such as averages and trends.
+    - Models a sequence of numeric values that arrive in order (like sensor readings or log data). Kernel manages adding/removing entries, while secondary methods provide analysis such as averages and trends.
   - **Kernel Methods**:
     - void addValue(int v) → adds a value to the stream
     - int removeValue() → removes and returns the most recent value
@@ -229,7 +229,7 @@ NOTE: I'm not sure if I'll be using *all* the methods provided below per compone
     - int max() → finds the largest value
     - int min() → finds the smallest value
     - double trend() → compares first and last values to see overall direction
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
       - Yes, because values can be added or removed.
@@ -256,7 +256,7 @@ NOTE: I'm not sure if I'll be using *all* the methods provided below per compone
     - double columnMean(int index) → computes average of numeric column
     - int findRow(String value) → finds the first row containing a value
     - DataTable filterByColumn(int index, String value) → returns matching rows
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
       - Yes, rows can be added and removed.
@@ -297,9 +297,9 @@ the following form: YYYY.0M.0D.
 
 ### Added
 
-- Designed a <!-- insert name of component 1 here --> component
-- Designed a <!-- insert name of component 2 here --> component
-- Designed a <!-- insert name of component 3 here --> component
+- Designed a DataTable component
+- Designed a ColorPalette component
+- Designed a DataStream component
 ```
 
 Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
@@ -313,7 +313,6 @@ designs, so we can gauge your progress. Please keep it updated at each stage
 of development.
 
 ### Submission
-
 
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
