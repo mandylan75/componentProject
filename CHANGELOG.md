@@ -22,17 +22,17 @@ the following form: YYYY.0M.0D.
 - Added kernel methods: size, isEmpty, addColor, removeColor
 - Added secondary methods: average Color, mostFrequent
 - Added ColorToString to display RBG Values
-- Added 'display' to show current colors in palette
+- Added display to show current colors in palette
 
 ## [2025.10.25]
 
 ### Added
 
-- Designed `ColorPaletteKernel` and `ColorPaletteEnhanced` interfaces for the ColorPalette component
+- Designed ColorPaletteKernel and ColorPaletteEnhanced interfaces for the ColorPalette component
 
 ### Updated
 
-- Updated project structure to include `ColorPaletteKernel.java` and `ColorPalette.java` interface files in src folder
+- Updated project structure to include ColorPaletteKernel.java and ColorPalette.java interface files in src folder
 
 ## [2025.11.07]
 
@@ -50,3 +50,17 @@ the following form: YYYY.0M.0D.
 ### Removed
 
 - Removed ColorPaletteEnhanced.java file
+
+## [2025.11.11]
+
+### Added
+
+- Designed kernel implementation for ColorPalette component
+- Implemented all kernel and standard methods in ColorPalette1
+- Added constructor and internal createNewRep() method for initialization
+- Defined convention and correspondence for internal representation (array of Color objects)
+
+## Updated
+
+- Removed "`" from CHANGELOG
+- Removed unnecessary portions in README.md of src folder and updated examples to ColorPalette

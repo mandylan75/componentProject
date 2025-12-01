@@ -6,7 +6,7 @@ import java.awt.Color;
  * Layered implementations of secondary methods for {@code ColorPalette}.
  * Provides analysis methods and Object overrides using only kernel methods.
  *
- * @author Amanda
+ * @author Amanda Lan
  */
 public abstract class ColorPaletteSecondary implements ColorPalette {
 
