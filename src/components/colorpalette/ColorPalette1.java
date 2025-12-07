@@ -42,51 +42,25 @@ public final class ColorPalette1 extends ColorPaletteSecondary {
         this.count = 0;
     }
 
-    /**
-     * Adds the given color to this palette.
-     *
-     * @param c
-     *            the color to add
-     * @updates this
-     * @requires c is not null and this.size() < this.colors.length
-     * @ensures this = #this * <c>
-     */
     @Override
     public void addColor(Color c) {
         assert c != null : "Violation of: c is not null";
         assert this.count < this.colors.length : "Violation of: palette not full";
 
         this.colors[this.count] = c;
-        this.count = this.count + 1;
+        this.count++;
     }
 
-    /**
-     * Removes and returns the last color in this palette.
-     *
-     * @updates this
-     * @requires this.size() > 0
-     * @ensures removeColor = [the last color of #this] and this = [#this
-     *          without its last color]
-     */
     @Override
     public Color removeColor() {
         assert this.count > 0 : "Violation of: this is not empty";
 
-        this.count = this.count - 1;
+        this.count--;
         Color removed = this.colors[this.count];
         this.colors[this.count] = null;
         return removed;
     }
 
-    /**
-     * Checks whether this palette contains the given color.
-     *
-     * @param c
-     *            the color to check
-     * @return true if the color is found, false otherwise
-     * @requires c is not null
-     * @ensures contains = (c is in this)
-     */
     @Override
     public boolean contains(Color c) {
         assert c != null : "Violation of: c is not null";
@@ -97,72 +71,42 @@ public final class ColorPalette1 extends ColorPaletteSecondary {
             if (this.colors[i].equals(c)) {
                 found = true;
             } else {
-                i = i + 1;
+                i++;
             }
         }
         return found;
     }
 
-    /**
-     * Returns the number of colors in this palette.
-     *
-     * @return the number of colors in this
-     * @ensures size = |this|
-     */
     @Override
     public int size() {
         return this.count;
     }
 
-    /**
-     * Checks whether this palette is empty.
-     *
-     * @return true if this has no colors, false otherwise
-     * @ensures isEmpty = (|this| = 0)
-     */
     @Override
     public boolean isEmpty() {
         return this.count == 0;
     }
 
-    /**
-     * Clears this palette, resetting it to the empty state.
-     *
-     * @updates this
-     * @ensures this = {}
-     */
     @Override
     public void clear() {
         this.createNewRep();
     }
 
-    /**
-     * Creates and returns a new instance of this component type.
-     *
-     * @return a new empty {@code ColorPalette1}
-     * @ensures newInstance = new ColorPalette1 and newInstance = {}
-     */
     @Override
     public ColorPalette1 newInstance() {
         return new ColorPalette1();
     }
 
-    /**
-     * Transfers the contents of the given palette into this one.
-     *
-     * @param source
-     *            the source palette
-     * @updates this, source
-     * @requires source is not this
-     * @ensures this = #source and source = {}
-     */
     @Override
     public void transferFrom(ColorPalette source) {
+        assert source != null : "Violation of: source is not null";
         assert source != this : "Violation of: source is not this";
 
-        this.clear();
-        while (!source.isEmpty()) {
-            this.addColor(source.removeColor());
-        }
+        ColorPalette1 src = (ColorPalette1) source;
+
+        this.colors = src.colors;
+        this.count = src.count;
+
+        src.createNewRep();
     }
 }
