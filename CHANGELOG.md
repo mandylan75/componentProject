@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## 2025.09.19
+## [2025.09.19]
 
 ### Added
 
@@ -60,7 +60,21 @@ the following form: YYYY.0M.0D.
 - Added constructor and internal createNewRep() method for initialization
 - Defined convention and correspondence for internal representation (array of Color objects)
 
-## Updated
+### Updated
 
 - Removed "`" from CHANGELOG
 - Removed unnecessary portions in README.md of src folder and updated examples to ColorPalette
+
+## [2025.12.07]
+
+### Added
+
+- Created `ColorPaletteDEMO1` and `ColorPaletteDEMO2` to demonstrate core use cases
+- Implemented JUnit test file for `ColorPaletteKernel`
+- Implemented JUnit test file for the abstract `ColorPalette` class
+- Added initial test coverage for primary and secondary operations
+
+### Updated
+
+- Improved `transferFrom` implementation for clarity and correctness
+- Cleaned up class headers in utility/demo classes

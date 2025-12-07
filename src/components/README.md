@@ -1,7 +1,3 @@
-@ -1,48 +0,0 @@
-
-# SRC Folder
-
 This README exists, so the folder shows up in source control like git. This
 file is not needed and can be safely deleted.
 
@@ -31,5 +27,3 @@ src
             ColorPaletteKernel.java
             ColorPaletteSecondary.java
 ```
-
-If done correctly, your portfolio can be bundled as its own `.jar`.
